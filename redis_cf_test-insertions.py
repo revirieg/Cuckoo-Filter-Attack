@@ -1,3 +1,5 @@
+# This script executes an attack to a cuckoo filter in Redis as described in this paper:
+# P. Reviriego and D. Larrabeiti, “Denial of Service Attack on Cuckoo Filter based Networking Systems”, in IEEE Communications Letters (in press).
 
 
 # Import th required modules
@@ -27,8 +29,6 @@ test_element = randint(ielements,offset-1);
 filter_name = str(test_element);
 
 
-# This script executes an attack to a cuckoo filter in Redis as described in this paper:
-# P. Reviriego and D. Larrabeiti, “Denial of Service Attack on Cuckoo Filter based Networking Systems”, in IEEE Communications Letters (in press).
 
 # Create the Cuckoo Filter
 r = Client()
